@@ -1,4 +1,4 @@
-/* document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const roles = ["Software Engineer", "Web Developer", "UI/UX Designer", "Tech enthusiast"];
   let currentIndex = 0;
   const roleElement = document.querySelector('.role');
@@ -14,4 +14,3 @@
 
   setInterval(changeRole, 2000);
 });
-*/

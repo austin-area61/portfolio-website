@@ -1,5 +1,5 @@
 *{
-  border: 1px dashed blue;
+  border: 1px dashed rgb(70, 153, 255);
 }
 .navbar {
   display: flex;
@@ -12,17 +12,35 @@
   text-decoration: none;
   font-size: 24px;
   color: black;
+  font-weight: 600;
 }
+
 .navbar .logo {
+  padding-left: 70px;
   font-size: 44px;
   font-weight: 600;
-  color: blue;
+  color: rgb(70, 153, 255);
 }
 .navbar .nav-links {
   display: flex;
   gap: 30px; /* Adjust the value to increase or decrease the space */
 }
 .navbar .nav-link.home {
-  color: blue;
+  color: rgb(70, 153, 255);
+  font-weight: 600;
 
+}
+.content{
+  font-size: 50px;
+  letter-spacing: 5px ;
+}
+.intro{
+  width: 400px;
+  padding: 100px;
+}
+.name{
+  color: rgb(70, 153, 255);
+}
+.changing-role{
+  color: rgb(70, 153, 255)
 }
