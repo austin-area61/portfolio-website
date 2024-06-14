@@ -1,3 +1,33 @@
 div{
-border: 1px solid red;
+  border: 1px solid grey;
+}
+.index-content{
+  z-index: 1;
+  margin-top: 80px;
+}
+.home-page{
+  display: flex;
+  margin-top: 180px;
+  margin-left: 10px;
+  
+}
+.user-description, .text{
+width: 700px;
+font-size: 30px;
+font-family: Arial;
+}
+.resume-link{
+  margin-top: 60px;
+}
+.resume-link button{
+  padding: 10px 40px;
+  color: white;
+  background-color: rgb(50, 61, 241);
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.resume-link img{
+  width: 60px;
+  vertical-align: middle;
 }
