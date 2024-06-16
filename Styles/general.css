@@ -21,13 +21,16 @@ font-family: Arial;
 }
 .resume-link button{
   padding: 10px 40px;
+  cursor: pointer;
   color: white;
   background-color: rgb(50, 61, 241);
   font-size: 30px;
   border: none;
   border-radius: 10px;
+  transition: color, background-color 0.2s;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
-.resume-link img{
-  width: 60px;
-  vertical-align: middle;
+.resume-link  button:hover{
+  color: rgb(50, 61, 241);
+  background-color: white;
 }
