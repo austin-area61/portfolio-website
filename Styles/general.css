@@ -3,21 +3,31 @@ div{
 }
 .index-content{
   z-index: 1;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 .home-page{
+  width: 100%;
   display: flex;
-  margin-top: 180px;
-  margin-left: 10px;
-  
+  flex-direction: row;
+  margin-left: 12px;
+  align-items: center;
 }
-.user-description, .text{
-width: 700px;
+.first-row, .second-row{
+  width: 100%; /* Ensure the div takes the full width of its container */
+  padding: 10px;
+}
+.user-description p{
 font-size: 30px;
 font-family: Arial;
+text-align: center; /* Center the text within the paragraph */
+max-width: 90%; /* Limit the width for better readability */
 }
+.dev-name, .spam {
+  color: rgb(50, 61, 241);
+}
+
 .resume-link{
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .resume-link button{
   padding: 10px 40px;
@@ -27,15 +37,43 @@ font-family: Arial;
   font-size: 30px;
   border: none;
   border-radius: 10px;
-  transition: color, background-color 0.2s;
+  transition: color, background-color 1s;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 .resume-link  button:hover{
   color: rgb(50, 61, 241);
   background-color: white;
 }
+.social-links{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
 .social-links img{
   width: 40px;
+  border-radius: 40px;
   margin-right: 20px;
   margin-top: 70px;
+}
+
+.social-links a {
+  margin: 20px 10px; /* Add margin between icons */
+  font-size: 2rem; /* Adjust icon size */
+  color: rgb(50, 61, 241);
+}
+
+.social-links a:hover {
+  color: black /* Change color on hover */
+}
+
+.second-row{
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure the div takes the full width of its container */
+  height: 100%;
+}
+.second-row img{
+  max-width: 100%; /* Ensure the image scales down if necessary */
+  height: auto;
 }
