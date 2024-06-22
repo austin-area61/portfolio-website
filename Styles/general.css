@@ -28,25 +28,26 @@ max-width: 90%; /* Limit the width for better readability */
 .dev-name, .spam .typed-text {
   color: rgb(50, 61, 241);
 }
-
+.spam{
+  display: inline-block;
+}
 .spam .typed-text {
+  vertical-align: middle;
   border-right: 2px solid rgb(50, 61, 241); /* Cursor effect */
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: 100%; /* Ensure it occupies the same width as the container */
+  box-sizing: border-box;
+  text-align: left;
 }
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: rgb(50, 61, 241); }
 }
-
+.blink {
+  animation: blink-caret 0.75s step-end infinite;
+}
 .resume-link{
   margin-top: 30px;
 }
