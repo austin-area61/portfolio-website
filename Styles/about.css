@@ -1,5 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: white; /* Light grey background */
+  color: #343a40; /* Dark grey text */
 }
 
 .container {
@@ -7,30 +9,33 @@ body {
   padding: 30px;
   display: flex;
   justify-content: space-around;
-  background-color: white;
 }
 
 .about-me {
-padding: 20px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.5s;
 }
-
+.about-me:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .about-me h2, .tech-stack h2 {
-  color: blue;
-
+  color: #007bff; /* Soothing blue for headings */
 }
 
 .about-me p {
   font-size: 18px;
-  width: 300px;
+  width: 400px;
 }
 
 .tech-stack {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  transition: box-shadow 0.5s;
+}
+.tech-stack:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tech-stack h2 {
@@ -38,8 +43,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tech-item {
-  background-color: #e0e0e0;
+  background-color: #f1f3f5; /* Light grey for tech items */
   padding: 10px 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, font-style 0.3s;
+}
+.tech-item:hover {
+  font-style: italic;
+  background-color: #ffc107; /* Soft yellow on hover */
 }
