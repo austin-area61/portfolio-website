@@ -99,6 +99,6 @@ max-width: 90%; /* Limit the width for better readability */
   max-width: 100%; /* Ensure the image scales down if necessary */
   height: 400px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 200px;
   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
 }

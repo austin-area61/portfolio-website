@@ -1,0 +1,40 @@
+div{
+  border: 1px solid grey;
+}
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+}
+
+.about-me, .tech-stack {
+
+}
+
+.about-me h2, .tech-stack h2 {
+  color: blue;
+}
+
+.about-me p {
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.tech-item {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
