@@ -1,40 +1,47 @@
-div{
-  border: 1px solid grey;
-}
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f0f0f0;
 }
 
 .container {
+  margin-top: 120px;
   display: flex;
-  background-color: white;
+  justify-content: space-around;
+
+  background-color: #fff;
+  padding: 20px;
 }
 
-.about-me, .tech-stack {
-
+.about-me {
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-me h2, .tech-stack h2 {
   color: blue;
+
 }
 
 .about-me p {
-  margin: 0;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  width: 400px;
+  font-size: 18px
 }
 
 .tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 200px;  /* Adjust width as needed */
+}
+
+.tech-stack h2 {
+  grid-column: span 3; /* Ensure the heading takes full width */
 }
 
 .tech-item {
   background-color: #e0e0e0;
-  padding: 10px;
-  margin: 5px;
+  padding: 10px 20px;
+  text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
