@@ -39,3 +39,53 @@
     font-size: 1.5rem; /* Smaller icons on smaller screens */
   }
 }
+
+/*about.css responsive*/
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me, .tech-stack {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .tech-stack {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+
+  .about-me h2, .tech-stack h2 {
+    text-align: center; /* Center align headings for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+  }
+
+  .about-me h2, .tech-stack h2 {
+    text-align: center; /* Center align headings for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack {
+    grid-template-columns: 1fr; /* 1 column for extra small screens */
+  }
+
+  .about-me h2, .tech-stack h2 {
+    text-align: center; /* Center align headings for extra small screens */
+  }
+
+  .nav-links {
+    margin-right: 20px; /* Adjust the margin for smaller screens */
+  }
+
+  .nav-links a {
+    font-size: 20px; /* Smaller font size for nav links */
+  }
+}
