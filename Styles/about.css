@@ -45,6 +45,7 @@ body {
 .tech-item {
   background-color: #f1f3f5; /* Light grey for tech items */
   padding: 10px 20px;
+  font-weight: 600;
   text-align: center;
   transition: background-color 0.3s, font-style 0.3s;
 }
