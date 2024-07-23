@@ -3,7 +3,17 @@ border: 1px solid red;
 }
 .projects{
   margin-top: 120px;
+  font-size: 40px;
+  font-family: Arial;
+  text-align: center;
+  color: #007bff;
+  font-weight: 600;
+  padding: 10px;
 }
 .image-classifier{
   display: flex;
+  height: 200px;
+}
+.project-image{
+  width: 450px;
 }
