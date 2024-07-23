@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', () => {
   const cursorEffect = document.createElement('div');
   cursorEffect.classList.add('cursor-effect');
@@ -12,3 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('mouseout', () => cursorEffect.classList.remove('hover'));
   });
 });
+*/

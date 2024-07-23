@@ -1,0 +1,9 @@
+div{
+border: 1px solid red;
+}
+.projects{
+  margin-top: 120px;
+}
+.image-classifier{
+  display: flex;
+}

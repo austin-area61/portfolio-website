@@ -1,16 +1,18 @@
-/* Cursor Effect Styles */
+/* This is
 body {
   position: relative;
-  overflow: hidden; /* Prevent scrollbars */
+  overflow: hidden;
 }
-
+  
 .cursor-effect {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background: radial-gradient(circle at center, rgba(0, 123, 255, 0.2) 0%, rgba(0, 123, 255, 0.1) 40%, transparent 70%);
   position: absolute;
-  pointer-events: none; /* Ensure it doesn't block other interactions */
+  pointer-events: none;
   transition: transform 0.1s ease;
-  z-index: 9999; /* Ensure it stays on top */
+  z-index: 9999;
 }
+a multi-line
+comment */
