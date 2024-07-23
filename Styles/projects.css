@@ -12,8 +12,31 @@ border: 1px solid red;
 }
 .image-classifier{
   display: flex;
-  height: 200px;
+  height: 250px;
+
 }
 .project-image{
   width: 450px;
+}
+.title, .project-description, .project-tech-stack, .project-links{
+  padding: 10px 15px;
+}
+.title{
+  color: grey;
+  font-size: 24px;
+}
+.project-description{
+  font-weight: bold;
+  font-size: 17px;
+}
+.project-tech-stack{
+  color: grey;
+  font-size: 20px;
+}
+.project-links{
+  font-size: 20px;
+  font-family: Arial;
+}
+.github-link{
+  margin-left: 25px;
 }
