@@ -52,4 +52,5 @@ body {
 .tech-item:hover {
   font-style: italic;
   background-color: #ffc107; /* Soft yellow on hover */
+  cursor: pointer;
 }
