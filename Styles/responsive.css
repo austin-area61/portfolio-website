@@ -89,3 +89,24 @@
     font-size: 20px; /* Smaller font size for nav links */
   }
 }
+
+/*project.css responsive design*/
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects-name{
+    margin-top: 150px;
+  }
+  .image-classifier {
+    flex-direction: column;
+    height: auto;
+    margin-left: 0; /* Adjust margin if needed */
+  }
+
+  .project-image {
+    width: 90%;
+  }
+
+  .project-image img {
+    height: auto;
+  }
+}
