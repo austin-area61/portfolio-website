@@ -47,6 +47,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .about-me{
+    margin-top: 50px;
+  }
 
   .about-me, .tech-stack {
     width: 100%;
@@ -90,27 +93,3 @@
   }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .projects-name{
-    margin-top: 150px;
-  }
-
-  .image-classifier {
-    flex-direction: column;
-    margin-left: 0; /* Adjust margin if needed */
-  }
-
-  .project-image {
-    width: 90%;
-    margin-bottom: 20px; /* Add some space between the image and the project info */
-  }
-
-  .project-image img {
-    height: auto;
-  }
-
-  .project-info {
-    width: 90%; /* Make the project info take up the full width */
-  }
-}

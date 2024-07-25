@@ -1,12 +1,10 @@
-/* General styles for project page */
 .projects-name{
-  margin-top: 120px;
+  margin-top: 100px;
   font-size: 40px;
   font-family: Arial;
   text-align: center;
   color: #007bff;
   font-weight: 600;
-  padding: 10px;
 }
 
 .image-classifier{
@@ -74,3 +72,29 @@
   margin-left: 20px;
 }
 
+/* Responsive design */
+/*project.html*/
+@media (max-width: 768px) {
+  .projects-name{
+
+  }
+
+  .image-classifier {
+    flex-direction: column;
+    margin-left: 0; /* Adjust margin if needed */
+    margin-top: 100px;
+  }
+
+  .project-image {
+    width: 90%;
+    margin-bottom: 20px; /* Add some space between the image and the project info */
+  }
+
+  .project-image img {
+    height: auto;
+  }
+
+  .project-info {
+    width: 90%; /* Make the project info take up the full width */
+  }
+}

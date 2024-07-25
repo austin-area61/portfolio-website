@@ -1,7 +1,7 @@
-div{
-  border: 1px solid red;
-}
-.contact{
+
+
+  /* General styles for the contact page */
+.contact {
   margin-top: 120px;
   color: #007bff;
   font-family: Arial;
@@ -10,33 +10,44 @@ div{
   padding: 10px;
   text-align: center;
 }
-.contact-container{
+
+.contact-container {
   margin-top: 25px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap; /* Allow flex items to wrap */
 }
-.contact-form{
+
+.contact-form {
   display: flex;
   flex-direction: column;
 }
-.form{
+
+.form {
   width: 400px;
   margin-left: 18px;
 }
-.social-links{
+
+.social-links {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
 }
-.contact-form input, .contact-form textarea{
+
+.contact-form input, .contact-form textarea {
   padding: 15px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: rgb(164, 164, 164);
 }
-.contact-form textarea{
+
+.contact-form textarea {
   height: 90px;
 }
-.contact-form button{
+
+.contact-form button {
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
@@ -44,34 +55,83 @@ div{
   font-size: 24px;
   border-radius: 4px;
 }
-::placeholder{
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+::placeholder {
   font-size: 20px;
   color: white;
 }
-.phone-email{
+
+.phone-email {
   display: flex;
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px; /* Add space below phone-email section */
   justify-content: space-around;
 }
-.social-media-icons{
+
+.social-media-icons {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
-.social-media-icons a{
+
+.social-media-icons a {
   margin: 20px 10px; /* Add margin between icons */
   font-size: 30px; /* Adjust icon size */
   color: rgb(50, 61, 241);
 }
-.phone{
+
+.social-media-icons a:hover {
+  color: black;
+}
+
+.phone {
   color: #007bff;
   font-size: 24px;
   font-family: Arial;
-
 }
-.phone-number{
+
+.phone-number {
   color: grey;
   font-size: 20px;
   font-weight: 600;
   margin-top: -15px;
   font-style: italic;
+}
+
+/* Responsive design */
+/*contact,html*/
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
   }
+.contact{
+  margin-top: 150px;
+}
+  .form {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .social-links {
+    width: 90%;
+    margin-top: 20px; /* Add space above social links */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .phone-email {
+    display: block;
+    margin-left: 5px;
+    width: 100%; /* Make phone-email take full width */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .social-media-icons {
+    width: 100%; /* Make social-media-icons take full width */
+    justify-content: center;
+  }
+}
