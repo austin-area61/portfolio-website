@@ -51,7 +51,7 @@ function handleSubmit(event) {
     document.getElementById('contact-container').innerHTML = '';
 
     // Change the contact div content
-    document.querySelector('.contact').innerHTML = 'Thanks for your feedback!';
+    document.querySelector('.contact').innerHTML = 'Thanks for your feedback! You will get a response ASAP.';
   } else {
     alert('Please fill in all fields.');
     return false;
