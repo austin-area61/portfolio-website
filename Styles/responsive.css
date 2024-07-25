@@ -22,6 +22,7 @@
   
   .home-page {
     flex-direction: column;
+    margin-left: -16px;
   }
   
   .first-row, .second-row {
@@ -33,6 +34,8 @@
   }
   
   .second-row {
+    align-items: center;
+    margin-left: -10px;
     order: 1; /* Make sure second-row appears above first-row */
   }
   .social-links a {
